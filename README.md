@@ -2,10 +2,10 @@
 使用scrapy编写的python爬虫，爬取汤不热上用户发布的图片与视频，下载到本地。
 
 ### 项目结构
-	* 爬虫：tbr.py
-	* 中间件: middlewares.py
-	* items: items.py
-	* 下载管道: pipelines.py
+  * 爬虫：tbr.py
+  * 中间件: middlewares.py
+  * items: items.py
+  * 下载管道: pipelines.py
 	
 ### 项目依赖
   * scrapy
