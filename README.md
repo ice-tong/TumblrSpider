@@ -1,6 +1,8 @@
 # TumblrSpider
 使用scrapy编写的python爬虫，爬取汤不热上用户发布的图片与视频，下载到本地。
 
+![](./show.png '下载到什么内容取决于种子用户')
+
 ### 项目结构
   * 爬虫：`tbr.py`
     1. 利用tumblr的一个接口：`https://username.tumblr.com/api/read/json?start=0&num=200` 获取用户post的内容。（具体见https://github.com/henan715/tumblrScrapy ）
