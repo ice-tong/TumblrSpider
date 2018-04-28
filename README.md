@@ -1,12 +1,14 @@
 # TumblrSpider
 使用scrapy编写的python爬虫，爬取汤不热上用户发布的图片与视频，下载到本地。
 
-
-
+### 项目结构
+	1. `tbr.py`
+	2. `itmes.py`
+	
 ### 项目依赖
   * scrapy
   * requests
-  * ssr(或其他任意科学上网工具)
+  * ssr(或其他科学上网工具)
 ### 使用方法 
   * 确保自己的电脑能够访问 https://www.tumblr.com/ 。
   * `./tumblrSpider/tumblrSpider/spiders/tbr.py` 文件中，在start_urls中填入一个种子用户的主页地址。max_depth 可设置最大爬取深度。
