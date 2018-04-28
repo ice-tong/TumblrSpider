@@ -6,4 +6,5 @@
   * requests
   * ssr(或其他任意科学上网工具)
 ### 使用方法 
-  * 在 ./TumblrSpider 路径下， 使用命令 scrapy crawl tbr 。
+  * 确保自己能够访问 https://www.tumblr.com/
+  * 在 ./TumblrSpider 路径下， 使用命令 scrapy crawl tbr 。
