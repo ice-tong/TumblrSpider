@@ -1,7 +1,7 @@
 # TumblrSpider
 使用scrapy编写的python爬虫，爬取汤不热上用户发布的图片与视频，下载到本地。
 
-![](./show.png '下载到什么内容取决于种子用户')
+![avatar](./show1.png '下载到什么内容取决于种子用户')
 
 ### 项目结构
   * 爬虫：`tbr.py`
