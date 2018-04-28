@@ -10,11 +10,11 @@
   * 中间件: `middlewares.py`
     1. 设置代理，因为某种原因，不能直接上tumblr，所以需要科学上网后才行，ssr开全局模式后可以无需代理直接爬，若是PAC模式则需要添加本地代理。
     2. 也可以直接添加国外代理IP
-    
-  * items: `items.py`
+  
+  * items: `items.py`
     1. 三个字段，分别为`file_url`, `file_path`和`file_type`。
-    
-  * 下载管道: `pipelines.py`
+  
+  * 下载管道: `pipelines.py`
     1. scrapy文件下载两种方式，用FilesPipeline或者requests。
     2. `TumblrspiderPipeline` 是用文件pipeline写的pipeline。
     3. `MyFilesPipeline` 是用requests方式写的pipeline。
