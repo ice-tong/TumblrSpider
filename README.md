@@ -8,7 +8,10 @@
     3. 若是reblogged的内容则将被转发的该用户加入爬取，可设置爬取深度。
     
   * 中间件: `middlewares.py`
-  * items: `items.py`
+    1. 设置代理，因为某种原因，不能直接上tumblr，所以需要科学上网后才行，ssr开全局模式后可以无需代理直接爬，若是PAC模式则需要添加本地代理。
+    2. 也可以直接添加国外代理IP
+    
+  * items: `items.py`
   * 下载管道: `pipelines.py`
 	
 ### 项目依赖
