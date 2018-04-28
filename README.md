@@ -9,5 +9,5 @@
   * ssr(或其他任意科学上网工具)
 ### 使用方法 
   * 确保自己的电脑能够访问 https://www.tumblr.com/ 。
-  * `./tumblrSpider/tumblrSpider/spiders/tbr.py` 文件中，在start_urls中填入一个种子用户的主页地址。max_depth 可设置最大爬取深度。
-  * 在 `./tumblrSpider` 路径下， 使用命令 `scrapy crawl tbr` 
+  *  `./tumblrSpider/tumblrSpider/spiders/tbr.py` 文件中，在start_urls中填入一个种子用户的主页地址。max_depth 可设置最大爬取深度。
+  *  在 `./tumblrSpider` 路径下， 使用命令 `scrapy crawl tbr` 
