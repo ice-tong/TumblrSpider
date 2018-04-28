@@ -4,6 +4,6 @@
 ### 项目依赖
   * scrapy
   * requests
-  * ssr(或其他任意科学上网工具)
-### 使用方法
-  * 在 ./TumblrSpider 路径下， 使用命令 scrapy crawl tbr 。
+  * ssr(或其他任意科学上网工具)
+### 使用方法 
+  * 在 ./TumblrSpider 路径下， 使用命令 scrapy crawl tbr 。
