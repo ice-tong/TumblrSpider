@@ -15,7 +15,11 @@
     1. 三个字段，分别为`file_url`, `file_path`和`file_type`。
     
   * 下载管道: `pipelines.py`
-	
+    1. scrapy文件下载两种方式，用FilesPipeline或者requests。
+    2. `TumblrspiderPipeline` 是用文件pipeline写的pipeline。
+    3. `MyFilesPipeline` 是用requests方式写的pipeline。
+    4. 相同网络环境下，前者比后者速度快，所以使用第一种pipeline就行。
+
 ### 项目依赖
   * scrapy
   * requests
