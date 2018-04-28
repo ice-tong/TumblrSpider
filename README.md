@@ -12,7 +12,9 @@
     2. 也可以直接添加国外代理IP
     
   * items: `items.py`
-  * 下载管道: `pipelines.py`
+    1. 三个字段，分别为`file_url`, `file_path`和`file_type`。
+    
+  * 下载管道: `pipelines.py`
 	
 ### 项目依赖
   * scrapy
