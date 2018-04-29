@@ -9,7 +9,7 @@ import json
 class TbrSpider(scrapy.Spider):
     name = 'tbr'
     allowed_domains = ['tumblr.com']
-    start_urls = ['http://mr-feelgood-stuff.tumblr.com/']
+    start_urls = ['https://mypussynet.tumblr.com/']
     max_depth = 4
     
     meta = {
