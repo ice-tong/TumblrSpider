@@ -9,7 +9,7 @@ import json
 class TbrSpider(scrapy.Spider):
     name = 'tbr'
     allowed_domains = ['tumblr.com']
-    start_urls = ['https://mypussynet.tumblr.com/']
+    start_urls = ['https://showgis.tumblr.com/']
     max_depth = 4
     
     meta = {
@@ -33,7 +33,25 @@ class TbrSpider(scrapy.Spider):
         
         posts = data['posts']
         for post in posts:
-    
+            if post['type'] == 'regular':
+                regular_body = post['regular-body']
+                try:
+                    video_id = re.findall(r'/(tumblr_[^_]*)_[^\.]*?\.jpg', regular_body)[0]
+                    video_id = video_id.split('.')[0]
+                    video_url = 'https://ve.media.tumblr.com/{}.mp4'.format(video_id)
+                    video_name = video_url.split('/')[-1]
+                    video_path = post['type'] + '/' + video_name
+
+
+                    item = TumblrspiderItem()
+                    item['file_url'] = video_url
+                    item['file_path'] = video_path
+                    item['file_type'] = post['type']
+                    yield item
+
+                except IndexError:
+                    print(regular_body)
+
             if post['type'] == 'video':
                 video_player = post['video-player']
                 try:
